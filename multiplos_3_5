@@ -1,0 +1,7 @@
+numeros = list(range(1,101)) #se genera una lista del 1 al 100
+lista_num = [numeros] #los numeros se guardan en una lista
+multiplos = [5,3]
+def multiplos(lista_num, multiplos): #se crea una variable de nombre multiplos, donde se guardan la lista de numeros, y los multiplos
+    resultado = lista_num % multiplos
+    if resultado == 0:
+        print("son multiplos de 3 ")
