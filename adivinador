@@ -1,0 +1,16 @@
+from random import randint #se genera un numero random con la libreria
+numero = (randint(1,101)) #se toman valores del 1 al 100
+print(numero)
+def adivinanza(datos):
+    while intentos <= 100:
+        intentos = intentos + 1
+        datos1 = int(input("intenta adivinar el numero "))#los numeros ingresados los guardo en esta variable
+        if datos1 < numero:
+            print("el numero es más bajo")
+        if datos1 > datos1:
+            print("tu numero es más alto") 
+        if datos1 == numero:
+            print("Los has logrado el numero era",numero)
+            break
+    adivinanza(datos)
+print("game over")
